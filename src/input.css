@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .door-button {
+    @apply h-40 w-32 flex flex-col items-center justify-center gap-2 transition-transform duration-200;
+  }
+
+  .door-button:hover:not(:disabled) {
+    @apply transform scale-105;
+  }
+
+  .door-button[disabled] {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .chart-container {
+    @apply w-full max-w-[600px] mx-auto overflow-x-auto;
+  }
+
+  .stats-card {
+    @apply bg-white rounded-lg p-6 mt-6 shadow-sm;
+  }
+}
