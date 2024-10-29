@@ -1,9 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import { Door, RefreshCcw, Play } from 'lucide-react';
-
 const MontyHallSimulator = () => {
   const [doors, setDoors] = useState([
     { id: 0, state: 'closed', hasPrize: false },
@@ -234,4 +228,6 @@ const MontyHallSimulator = () => {
   );
 };
 
-export default MontyHallSimulator;
+// Mount the application
+const root = createRoot(document.getElementById('root'));
+root.render(<MontyHallSimulator />);
