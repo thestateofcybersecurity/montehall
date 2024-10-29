@@ -263,7 +263,11 @@ const MontyHallSimulator = () => {
               <li>If you initially picked a goat (2/3 probability), switching will always win you the prize.</li>
               <li>If you initially picked the prize (1/3 probability), switching will always lose.</li>
               <li>Therefore, switching wins 2/3 of the time, while staying wins 1/3 of the time.</li>
-    
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 
