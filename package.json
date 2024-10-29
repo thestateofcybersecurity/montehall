@@ -1,0 +1,24 @@
+{
+  "name": "monty-hall-simulator",
+  "version": "1.0.0",
+  "description": "Monty Hall Problem Simulator",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "build:js": "esbuild src/monty-hall.jsx --bundle --minify --outfile=assets/js/monty-hall.js",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "watch:js": "esbuild src/monty-hall.jsx --bundle --watch --outfile=assets/js/monty-hall.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.2",
+    "lucide-react": "^0.363.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  }
+}
