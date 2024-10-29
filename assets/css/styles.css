@@ -1,0 +1,22 @@
+/* assets/css/styles.css */
+.door-button {
+  height: 10rem;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.door-button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.door-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Add any additional custom styles here */
